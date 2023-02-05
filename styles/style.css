@@ -1,0 +1,287 @@
+/* font family  */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,800&display=swap');
+
+/* common css   */
+*{
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+}
+body{
+  font-family: 'Work Sans', sans-serif;
+}
+.max-width{
+  max-width: 90%;
+}
+.praimary-btn{
+  background: #FF900E;
+  border-radius: 8px;
+  border: none;
+  padding: 20px 25px;
+  cursor: pointer;
+  max-width: 180px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.button-2{
+  left: 0;
+  transform: translate(-0);
+}
+
+/* -------------------------
+    header styles pattern
+--------------------------- */
+.header{
+  background: rgba(255, 144, 14, 0.1);
+}
+.container{
+  margin: auto;
+  padding: 50px 0 100px 0;
+}
+.content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-title{
+  font-weight: 700;
+  font-size: 45px;
+  color: #131313;
+}
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-top: 20px;
+}
+nav ul li{
+  list-style: none;
+}
+nav ul li a{
+  font-weight: 500;
+  font-size: 18px;
+  color: #424242;
+  margin-left: 35px;
+}
+
+/* --------------------------
+    banner styles pattern
+---------------------------- */
+.banner-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.banner-text{
+  max-width: 862px;
+}
+.banner-title{
+  font-weight: 700;
+  font-size: 64px;
+  color: #131313;
+  text-align: center;
+}
+.banner-description{
+  font-weight: 400;
+  font-size: 16px;
+  color: #727272;
+  text-align: center;
+  margin: 30px 0 32px 0;
+}
+.praimary-btn a{
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 20px;
+}
+.banner-img{
+  max-width: 100%;
+  margin: 50px 0 45px 0;
+}
+.banner-img img{
+  max-width: 100%;
+}
+
+/* ---------------------------------
+        feature styles part
+------------------------------------ */
+.feature-container{
+  margin: auto;
+}
+.feature{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 85px 0 130px 0;
+}
+.feature-images{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+.feature-images .feature-img{
+  max-width: 342px;
+  max-height: 342px;
+}
+.feature-img img{
+  width: 100%;
+  border-radius: 8px;
+}
+.feature-text{
+  max-width: 537px;
+  margin-left: 75px;
+}
+.feature-title{
+  font-weight: 500;
+  font-size: 45px;
+  color: #727272;
+}
+.span{
+  font-weight: 700;
+  font-size: 45px;
+  color: #131313;
+}
+.feature-other-text{
+  font-weight: 700;
+  font-size: 45px;
+  color: #FF900E;
+}
+.feature-description{
+  font-weight: 400;
+  font-size: 16px;
+  color: #727272;
+  margin: 25px 0 32px 0;
+}
+
+/* -------------------------------
+      enjoy styles paert 
+----------------------------------- */
+.enjoy-container{
+  margin: auto;
+}
+.enjoy-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 130px;
+}
+.enjoy-text{
+  margin-right: 54px;
+}
+.enjoy-section-title{
+  font-weight: 700;
+  font-size: 45px;
+  color: #131313;
+  margin-bottom: 24px;
+  border-left: 5px solid #FF900E;
+  padding-left: 21px;
+}
+.enjoy-section-description{
+  font-weight: 400;
+  font-size: 16px;
+  color: #727272;
+  max-width: 586px;
+  margin-bottom: 60px;
+}
+.enjoy-section-2{
+  margin-bottom: 20px;
+  padding: 30px;
+}
+.enjoy-title{
+  font-weight: 600;
+  font-size: 20px;
+  color: #131313;
+  margin-bottom: 10px;
+}
+.enjoy-description{
+  font-weight: 400;
+  font-size: 16px;
+  color: #727272;
+  max-width: 514px;
+}
+
+.enjoy-imges .enjoy-img{
+  max-width: 708px;
+  max-height: 982px;
+}
+.enjoy-img img{
+  width: 100%;
+}
+
+
+
+
+
+/* -------------------------
+       media query styles  
+--------------------------- */
+
+/* ----------------------
+     mobile device 
+------------------------ */
+@media only screen and (max-width:576px) {
+  
+  /* ------------------------------
+          header part media  
+---------------------------------- */
+  .content{
+    flex-direction: column;
+  }
+  .header-title{
+    font-size: 30px;
+  }
+
+  /* ----------------------------
+          banner part media   
+  -------------------------------- */
+  .banner-title{
+    font-size: 40px;
+  }
+  .banner-description{
+    font-size: 14px;
+    margin: 30px 0 60px 0;
+  }
+
+  /* ------------------------------
+       feature media part
+  --------------------------------- */
+
+  .feature{
+    flex-direction: column-reverse;
+    margin: 85px 0 130px 0;
+  }
+  .feature-images{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .feature-text{
+    margin-left: 0;
+    text-align: center;
+  }
+  .button-2{
+    margin-bottom: 35px;
+  }
+
+  /* ---------------------------
+         enjoy media part 
+  ------------------------------*/
+
+  .enjoy-content{
+    flex-direction: column;
+    margin-bottom: 130px;
+  }
+  .enjoy-text{
+    margin-right: 0;
+    text-align: center;
+  }
+  .enjoy-section-title{
+    font-size: 30px;
+    padding-left: 0px;
+  }
+
+}
