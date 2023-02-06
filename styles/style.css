@@ -160,7 +160,7 @@ nav ul li a{
 }
 
 /* -------------------------------
-      enjoy styles paert 
+      enjoy styles part 
 ----------------------------------- */
 .enjoy-container{
   margin: auto;
@@ -213,6 +213,130 @@ nav ul li a{
 .enjoy-img img{
   width: 100%;
 }
+
+/* --------------------------------
+         facts styles part 
+------------------------------------*/
+
+.facts{
+  margin-bottom: 100px;
+}
+.facts-container{
+  margin: auto;
+}
+.facts-text{
+  margin-bottom: 100px;
+}
+.facts-title{
+  font-weight: 700;
+  font-size: 45px;
+  color: #131313;
+  margin-bottom: 24px;
+}
+.facts-description{
+  max-width: 542px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #727272;
+}
+.facts-fonts{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  justify-items: center;
+}
+
+@keyframes animet {
+  form{
+    background: #FF900E;
+  }
+  to{
+    background: #FF900E;
+  }
+}
+.fact-font{
+  text-align: center;
+  border: 1px solid #FF900E;
+  border-radius: 8px;
+  padding: 45px 35px;
+  animation: animet 2s ease-in .1s infinite alternate ;
+}
+
+.fact-font .facts-font-images{
+  max-width: 45.22px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.facts-font-images img{
+  width: 100%;
+}
+.fact-font-title{
+  font-weight: 600;
+  font-size: 45px;
+  color: #424242;
+}
+.fact-font-description{
+  font-weight: 600;
+  font-size: 20px;
+  color: #727272;
+}
+
+/* ---------------------------------
+          Sponspors part styles 
+------------------------------------ */
+.Sponspors{
+  margin-bottom: 130px;
+}
+.Sponspors-container{
+  margin: auto;
+}
+.Sponspors-text{
+  max-width: 542px;
+  margin: auto;
+  text-align: center;
+}
+.Sponspors-title{
+  font-weight: 700;
+  font-size: 45px;
+  color: #131313;
+  margin-bottom: 24px;
+}
+.Sponspors-description{
+  font-weight: 400;
+  font-size: 16px;
+  color: #727272;
+  margin-bottom: 50px;
+}
+.Sponspors-image{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+.Sponspors-image img{
+  max-width: 166.76px;
+  filter: grayscale(100%);
+}
+
+/* -------------------------------
+        footer styles part 
+--------------------------------- */
+
+.footer{
+  margin-bottom: 100px;
+}
+.footer-container{
+  margin: auto;
+}
+.footer-text{
+  font-weight: 400;
+  font-size: 20px;
+  color: #424242;
+  text-align: center;
+  padding: 39px 0;
+}
+
 
 
 
@@ -283,5 +407,43 @@ nav ul li a{
     font-size: 30px;
     padding-left: 0px;
   }
+  .enjoy-section-2{
+    margin-bottom: 35px;
+    padding: 0px;
+  }
+
+  /* -----------------------------
+          facts media part 
+  --------------------------------*/
+
+  .facts-text{
+    text-align: center;
+  }
+  .facts-title{
+    font-size: 35px;
+  }
+  .facts-fonts{
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+
+  /* --------------------------------
+         Sponspors media part 
+  ---------------------------------- */
+
+  .Sponspors-title{
+    font-size: 35px;
+  }
+  .Sponspors-image{
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 30px;
+  }
+
+  /* ----------------------------------
+           footer media part   
+  -------------------------------------*/
+
+
+
 
 }
