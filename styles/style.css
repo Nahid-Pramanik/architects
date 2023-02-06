@@ -226,6 +226,7 @@ nav ul li a{
 }
 .facts-text{
   margin-bottom: 100px;
+  text-align: center;
 }
 .facts-title{
   font-weight: 700;
@@ -238,6 +239,7 @@ nav ul li a{
   font-weight: 400;
   font-size: 16px;
   color: #727272;
+  margin: auto;
 }
 .facts-fonts{
   display: grid;
@@ -442,6 +444,195 @@ nav ul li a{
   /* ----------------------------------
            footer media part   
   -------------------------------------*/
+
+
+}
+
+
+/* -------------------------------------
+         mediam device media part  
+----------------------------------------*/
+
+@media only screen and (min-width:577px) and (max-width:768px){
+
+   /* ------------------------------
+          header part media  
+---------------------------------- */
+  .header-title{
+    font-size: 30px;
+  }
+
+   /* ------------------------------
+       feature media part
+  --------------------------------- */
+
+  .feature{
+    flex-direction: column-reverse;
+    margin: 85px 0 130px 0;
+  }
+  .feature-images{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .feature-text{
+    max-width: 760px;
+    margin-left: 0;
+    text-align: center;
+  }
+  .button-2{
+    margin-bottom: 35px;
+  }
+
+   /* ---------------------------
+         enjoy media part 
+  ------------------------------*/
+
+  .enjoy-content{
+    flex-direction: column;
+    margin-bottom: 130px;
+  }
+  .enjoy-text{
+    margin-right: 0;
+    text-align: center;
+  }
+  .enjoy-section-title{
+    margin-bottom: 24px;
+    padding-left: 0;
+  }
+  .enjoy-section-description{
+    max-width: 760px;
+    margin-bottom: 60px;
+  }
+  .enjoy-section-title{
+    font-size: 30px;
+    padding-left: 0px;
+  }
+  .enjoy-section-2{
+    margin-bottom: 35px;
+    padding: 0px;
+  }
+  .enjoy-description{
+    max-width: 760px;
+  }
+
+   /* -----------------------------
+          facts media part 
+  --------------------------------*/
+  .facts-text{
+    text-align: center;
+  }
+  .facts-title{
+    font-size: 35px;
+  }
+  .facts-description{
+    max-width: 760px;
+  }
+  .facts-fonts{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+    /* --------------------------------
+         Sponspors media part 
+  ---------------------------------- */
+  .Sponspors-title{
+    font-size: 35px;
+  }
+  .Sponspors-image{
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+
+}
+
+
+
+
+/* ------------------------------------
+          largr device media part
+--------------------------------------- */
+
+@media only screen and (min-width:769px) and (max-width:992px) {
+  
+  /* ------------------------------
+       feature media part
+  --------------------------------- */
+
+  .feature{
+    flex-direction: column-reverse;
+    margin: 85px 0 130px 0;
+  }
+  .feature-images{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .feature-text{
+    margin-left: 0;
+    text-align: center;
+    max-width: 920px;
+  }
+  .button-2{
+    margin-bottom: 35px;
+  }
+
+     /* ---------------------------
+         enjoy media part 
+  ------------------------------*/
+
+  .enjoy-content{
+    flex-direction: column;
+    margin-bottom: 130px;
+  }
+  .enjoy-text{
+    margin-right: 0;
+    text-align: center;
+  }
+  /* .enjoy-section-title{
+    font-size: 30px;
+    padding-left: 0px;
+  } */
+  .enjoy-section-description{
+    max-width: 920px;
+  }
+  .enjoy-section-2{
+    margin-bottom: 35px;
+    padding: 0px;
+  }
+  .enjoy-description{
+    max-width: 920px;
+  }
+
+
+   /* -----------------------------
+          facts media part 
+  --------------------------------*/
+  .facts-text{
+    text-align: center;
+  }
+  .facts-title{
+    font-size: 45px;
+  }
+  .facts-description{
+    max-width: 920px;
+    text-align: center;
+    align-items: center;
+  }
+  .facts-fonts{
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+    /* --------------------------------
+         Sponspors media part 
+  ---------------------------------- */
+  .Sponspors-title{
+    font-size: 35px;
+  }
+  .Sponspors-image{
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+  }
+  .Sponspors-image img{
+    max-width: 120px;
+  }
 
 
 
